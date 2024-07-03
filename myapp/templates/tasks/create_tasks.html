@@ -1,0 +1,11 @@
+{% extends 'layout/layout.html' %}
+{% block content %}
+<h1>Create a new tasks</h1>
+<form method="POST"  action="{% url 'create_tasks' %}">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button>Save</button>
+</form>
+
+
+{% endblock %}
