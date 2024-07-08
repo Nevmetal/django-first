@@ -6,7 +6,7 @@ from .forms import CreateNewTasks, CreateNewProject
 
 
 def index(request):
-    title = 'Django Course'
+    title = 'Django Web'
     return render(request, 'index.html', {
         'title': title
     })
